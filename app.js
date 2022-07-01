@@ -34,7 +34,6 @@ app.use(
 app.use('/api/auth', require('./routes/auth.routes'))
 
 app.use('/api/user', function (req, res, next) {
-    //function authenticateToken(req, res, next) {
         const AccessToken = process.env.JWT_ACCESS_SECRET
         const authHeader = req.headers["authorization"]
         const token = authHeader && authHeader.split(' ')
@@ -45,12 +44,10 @@ app.use('/api/user', function (req, res, next) {
             req.user = user
             next()
         })
-   // }
-   // authenticateToken()
 })
 
 let libPath;
-let lsnum;
+
 if (process.platform === 'win32') {           // Windows
     libPath = 'C:\\instantclient_21_6';
 } else if (process.platform === 'darwin') {   // macOS
