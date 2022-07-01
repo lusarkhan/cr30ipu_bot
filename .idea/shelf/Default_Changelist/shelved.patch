@@ -1,0 +1,92 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"BRANCH:master\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </select>\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0e3c9549-86e9-4fe8-a35d-691b9ddd41db\" name=\"Default Changelist\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2B154XHJzXjViAZBwbJXCVTSfjj\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"project.propVCSSupport.Mappings\" />\r\n    <property name=\"ts.external.directory.path\" value=\"C:\\Users\\admin\\AppData\\Local\\JetBrains\\WebStorm 2020.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external\" />\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0e3c9549-86e9-4fe8-a35d-691b9ddd41db\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1656060559915</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1656060559915</updated>\r\n      <workItem from=\"1656060561233\" duration=\"171000\" />\r\n      <workItem from=\"1656060765965\" duration=\"15245000\" />\r\n      <workItem from=\"1656409436784\" duration=\"28032000\" />\r\n      <workItem from=\"1656583008600\" duration=\"3578000\" />\r\n      <workItem from=\"1656662575978\" duration=\"136000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"2\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"master\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"552\" y=\"178\" key=\"#Deployment\" timestamp=\"1656400680524\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"552\" y=\"178\" key=\"#Deployment/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1656400680524\" />\r\n    <state x=\"461\" y=\"165\" key=\"SettingsEditor\" timestamp=\"1656662711514\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"461\" y=\"165\" key=\"SettingsEditor/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1656662711514\" />\r\n    <state x=\"616\" y=\"240\" key=\"run.anything.popup\" timestamp=\"1656574665741\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"616\" y=\"240\" key=\"run.anything.popup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1656574665741\" />\r\n    <state x=\"623\" y=\"225\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1656494265284\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"623\" y=\"225\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1656494265284\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision f951850f830d88babf44852d09a61e6c284d3006)
++++ .idea/workspace.xml	(date 1656663076413)
+@@ -6,6 +6,15 @@
+         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+       </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
+     </expand>
+     <select>
+       <path>
+@@ -16,7 +25,7 @@
+     </select>
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="" />
++    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="Initial Commit" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -24,6 +33,13 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="hiddenUrls">
++      <set>
++        <option value="https://github.com/lusarkhan/cr30ipu_bot.git" />
++      </set>
++    </option>
+   </component>
+   <component name="ProjectId" id="2B154XHJzXjViAZBwbJXCVTSfjj" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+@@ -53,8 +69,16 @@
+       <workItem from="1656060765965" duration="15245000" />
+       <workItem from="1656409436784" duration="28032000" />
+       <workItem from="1656583008600" duration="3578000" />
+-      <workItem from="1656662575978" duration="136000" />
++      <workItem from="1656662575978" duration="500000" />
++    </task>
++    <task id="LOCAL-00001" summary="Initial Commit">
++      <created>1656662766268</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1656662766268</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -82,6 +106,10 @@
+         </entry>
+       </map>
+     </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Initial Commit" />
++    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="552" y="178" key="#Deployment" timestamp="1656400680524">
+@@ -92,6 +120,14 @@
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1656662711514" />
++    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1656662861827">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1656662861826" />
++    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1656663009564">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1656663009564" />
+     <state x="616" y="240" key="run.anything.popup" timestamp="1656574665741">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
