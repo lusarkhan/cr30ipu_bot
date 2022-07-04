@@ -29,29 +29,39 @@ router.post(
                 massage: 'Некорректные данные при регистрации'
             })
         }
-        const { email, password, phone, active_hex, status } = req.body
+        const {email, password, phone} = req.body
 
-        const candidate = await User.findOne({email: email })
+        const candidate = await User.findOne({email: email})
 
         if (candidate) {
-            return res.status(400).json({ message: 'Такой пользователь уже существует' })
+            return res.status(400).json({message: 'Такой пользователь уже существует'})
         }
 
         const hashedPassword = await barest.hash(password, 12)
 
         const dtReg = Date()
 
-        const user = new User({ email: email, password: hashedPassword, phone: phone, dt_reg: dtReg, dt_upd: dtReg, active_hex: active_hex, status: status })
+        const activeHex = await barest.hash(hashedPassword, 8)
+
+        const user = new User({
+            email: email,
+            password: hashedPassword,
+            phone: phone,
+            dt_reg: dtReg,
+            dt_upd: dtReg,
+            active_hex: activeHex,
+            status: 0
+        })
 
         await user.save()
-        if(user) {
+        if (user) {
 
             const nodemailer = require("nodemailer");
 
             let transporter = nodemailer.createTransport({
-                    host: "smtp.yandex.ru",
-                    port: 25,
-                    secure: false,
+                host: "smtp.yandex.ru",
+                port: 25,
+                secure: false,
                     auth: {
                         user: "noreply@cr30.ru",
                         pass: "sf%wfi8v_MuU"
