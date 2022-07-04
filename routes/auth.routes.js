@@ -69,10 +69,10 @@ router.post(
                 });
 
             let info = await transporter.sendMail({
-                from: '"Личный кабинет АО ЦР" <noreply@cr30.ru>',
+                from: '"Личный кабинет АО ЦР" <noreply@30.ru>',
                 to: email,
                 subject: "Регистрация в Личном кабинете АО 'ЦР'",
-                text: "${password}",
+                text: `${password}`,
                 html: "<b></b>",
             });
 
