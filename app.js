@@ -71,10 +71,6 @@ if (token === undefined) {
     throw new Error('BOT_TOKEN must be provided!')
 }
 
-
-
-
-
 const start = async (uri, callback) => {
     try {
         await mongoose.connect(process.env.DB_URL, {

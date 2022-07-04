@@ -8,8 +8,6 @@ const schema = new Schema({
     dt_upd: { type: Date, required: true },
     active_hex: { type: String, required: true },
     status: { type: Number, required: true },
-    //reset_password_token: { type: String, required: true },
-    //dt_reset_password_token: { type: Date, required: true },
     links: [{ type: Types.ObjectId, ref: 'Link' }]
 })
 
