@@ -64,7 +64,7 @@ router.post(
                 secure: false,
                     auth: {
                         user: "noreply@cr30.ru",
-                        pass: "sf%wfi8v_MuU"
+                        pass: ""
                     },
                 });
 

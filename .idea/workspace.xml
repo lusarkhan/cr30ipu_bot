@@ -20,14 +20,11 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="Remove comments">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="Change requst params">
       <change beforePath="$PROJECT_DIR$/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +65,7 @@
       <workItem from="1656583008600" duration="3578000" />
       <workItem from="1656662575978" duration="136000" />
       <workItem from="1656782220193" duration="840000" />
-      <workItem from="1656907853510" duration="3716000" />
+      <workItem from="1656907853510" duration="4026000" />
     </task>
     <task id="LOCAL-00001" summary="Pull">
       <created>1656663264537</created>
@@ -112,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656911733632</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Change requst params">
+      <created>1656912922597</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656912922597</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Change requst params">
+      <created>1656912942008</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656912942008</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,19 +134,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -146,7 +145,8 @@
     <MESSAGE value="Pull" />
     <MESSAGE value="Revert &quot;Remove comments&quot;&#10;&#10;This reverts commit 2ad78083" />
     <MESSAGE value="Remove comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove comments" />
+    <MESSAGE value="Change requst params" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change requst params" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
