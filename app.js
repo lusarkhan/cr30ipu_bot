@@ -35,11 +35,11 @@ app.use('/api/auth', require('./routes/auth.routes'))
 
 app.use('/api/user', function (req, res, next) {
     //function authenticateToken(req, res, next) {
-    const AccessToken = process.env.JWT_ACCESS_SECRET
+    const accessToken = process.env.JWT_ACCESS_SECRET
     const authHeader = req.headers["authorization"]
     const token = authHeader && authHeader.split(' ')
     if (token == null) return res.sendStatus(401)
-    jwt.verify(token.toString(), AccessToken, (err, user) => {
+    jwt.verify(token.toString(), accessToken, (err, user) => {
         console.log(err)
         if (err) return res.sendStatus(403)
         req.user = user
@@ -51,7 +51,7 @@ app.use('/api/user', function (req, res, next) {
 
 let libPath;
 let lsnum;
-if (process.platform === 'win32') {           // Windows
+if (process.platform === 'win32') {
     libPath = 'C:\\instantclient_21_6';
 } else if (process.platform === 'darwin') {   // macOS
     libPath = process.env.HOME + '/Downloads/instantclient_19_8';

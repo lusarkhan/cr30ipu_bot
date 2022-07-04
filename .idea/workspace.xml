@@ -6,17 +6,30 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="" />
+    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="Remove comments">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +67,38 @@
       <workItem from="1656409436784" duration="28032000" />
       <workItem from="1656583008600" duration="3578000" />
       <workItem from="1656662575978" duration="136000" />
+      <workItem from="1656782220193" duration="840000" />
+      <workItem from="1656907853510" duration="1454000" />
     </task>
+    <task id="LOCAL-00001" summary="Pull">
+      <created>1656663264537</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656663264537</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Pull">
+      <created>1656663269729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656663269729</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Remove comments">
+      <created>1656666764047</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656666764047</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Revert &quot;Remove comments&quot;&#10;&#10;This reverts commit 2ad78083">
+      <created>1656667033159</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656667033159</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,7 +115,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -82,16 +126,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pull" />
+    <MESSAGE value="Remove comments" />
+    <MESSAGE value="Revert &quot;Remove comments&quot;&#10;&#10;This reverts commit 2ad78083" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Remove comments&quot;&#10;&#10;This reverts commit 2ad78083" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Deployment" timestamp="1656400680524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1656400680524" />
+    <state x="555" y="86" key="CommitChangelistDialog2" timestamp="1656667032114">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1656667032114" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1656667094457">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1656667094457" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1656662711514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1656662711514" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1656666784278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1656666784278" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1656574665741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
