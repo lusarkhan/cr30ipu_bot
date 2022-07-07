@@ -11,13 +11,13 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser')
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken')
+const session = require('client-sessions');
 
 const PORT = process.env.PORT || 5000;
 const tokenKey = process.env.API_TOKEN;
 
 let resultls=''
 
-app.use(cookieParser());
 app.use(cors());
 app.use(cors({
     credentials: true,
@@ -34,19 +34,19 @@ app.use(
 app.use('/api/auth', require('./routes/auth.routes'))
 
 app.use('/api/user', function (req, res, next) {
-    //function authenticateToken(req, res, next) {
     const accessToken = process.env.JWT_ACCESS_SECRET
+
     const authHeader = req.headers["authorization"]
-    const token = authHeader && authHeader.split(' ')
+    const token = authHeader && authHeader.split(' ')[1]
     if (token == null) return res.sendStatus(401)
     jwt.verify(token.toString(), accessToken, (err, user) => {
         console.log(err)
         if (err) return res.sendStatus(403)
         req.user = user
+        req.userId = user.id
+        // console.log(user)
         next()
     })
-    // }
-    // authenticateToken()
 })
 
 let libPath;
@@ -85,6 +85,24 @@ const start = async (uri, callback) => {
 }
 
 start()
+
+app.use(cookieParser());
+
+app.use(session({
+    cookieName: 'sessioncookie',
+    secret: 'long_string_which_is_hard_to_crack',
+    duration: 30 * 60 * 1000,
+    activeDuration: 5 * 60 * 1000,
+}));
+
+app.use("/", (req, res, next) => {
+    const userInfo = session.user || "unlogged";
+    return res.status(200).send({
+        id: userInfo.id,
+        username: userInfo.username,
+        email: userInfo.email,
+    });
+});
 /*
 const { Telegraf, Markup } = require('telegraf')
 const bot = new Telegraf(token)
