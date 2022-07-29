@@ -1,26 +1,24 @@
-
 require('dotenv').config()
-const {Router} = require('express')
+const {Router} = require('express');
 const barest = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const Mail = require('../classes/mailer')
-const session = require('client-sessions');
-const {check, validationResult} = require('express-validator')
+const session = require('client-sessions')
+const {body} = require('express-validator')
 const User = require('../models/User')
 const router = Router()
-const tokenKey = process.env.JWT_ACCESS_SECRET;
-const mailSettings = process.env.MAILSETTINGS;
-const siteURL = process.env.API_URL;
-let token
+const tokenKey = process.env.JWT_ACCESS_SECRET
+const mailSettings = process.env.MAILSETTINGS
+const siteURL = process.env.API_URL
+const tokenService = require('../service/token-service')
+const userController = require('../controllers/user-controller')
+let access_token, refresh_token
 
 
 // /api/auth/register
-router.post(
-    '/signup',
-    [
-        check('email', 'Не корректный email').isEmail().withMessage('Invalid e-mail.'),
-        check('password', 'Минимальная длинна пароля 8 символов')
-            .isLength({min: 8}),
+router.post('/registration', [
+        body('email', 'Не корректный email').isEmail().withMessage('Invalid e-mail.'),
+        body('password', 'Минимальная длинна пароля 8 символов')
+            .isLength({min: 8, max: 32}),
         check('password').custom(val => {
             const uppercase = /[A-Z]+/;
             const lowercase = /[a-z]+/;
@@ -31,132 +29,175 @@ router.post(
             }
             return true;
         }),
+        check('phone', 'Введите номер телефона').isMobilePhone('ru-RU').withMessage('Не верный формат номера')
     ],
-    async (req, res) => {
+    userController.registration);
 
-    try{
-        const errors = validationResult(req)
+router.post('/login', userController.login);
+router.post('/logout', userController.logout);
+router.get('/activate/:link', userController.activate);
+router.post('/refresh', userController.refresh);
+router.post('/users', userController.getUsers);
 
-        if (!errors.isEmpty()){
-            return res.status(400).json({
-                errors: errors.array(),
-                massage: 'Некорректные данные при регистрации'
-            })
-        }
-        const {email, password, phone} = req.body
+/* '/registration',
+ [
+     check('email', 'Не корректный email').isEmail().withMessage('Invalid e-mail.'),
+     check('password', 'Минимальная длинна пароля 8 символов')
+         .isLength({min: 8}),
+     check('password').custom(val => {
+         const uppercase = /[A-Z]+/;
+         const lowercase = /[a-z]+/;
+         const digit = /[0-9]+/;
+         const special = /[\W]+/
+         if (!uppercase.test(val) && !lowercase.test(val) && !digit.test(val) && !special.test(val) && val.length < 8) {
+             throw new Error('Минимальная длинна пароля 8 символов');
+         }
+         return true;
+     }),
+     check('phone', 'Введите номер телефона').isMobilePhone('ru-RU').withMessage('Не верный формат номера')
+ ],
+ async (req, res) => {
 
-        const candidate = await User.findOne({email: email})
+ try{
+     const errors = validationResult(req)
 
-        if (candidate) {
-            return res.status(400).json({message: 'Такой пользователь уже существует'})
-        }
+     if (!errors.isEmpty()){
+         return res.status(400).json({
+             errors: errors.array(),
+             massage: 'Некорректные данные при регистрации'
+         })
+     }
+     const {email, password, phone} = req.body
 
-        const hashedPassword = await barest.hash(password, 12)
+     const candidate = await User.findOne({email: email})
 
-        const dtReg = Date()
+     if (candidate) {
+         return res.status(400).json({message: 'Такой пользователь уже существует'})
+     }
 
-        const activeHex = await barest.hash(hashedPassword, 8)
+     const hashedPassword =await barest.hashSync(password, 12) // await barest.hash(password, 12)
 
-        token = jwt.sign(
-            {userId: process.env.JWT_ACCESS_SECRET},
-            tokenKey,
-            {expiresIn: '100'}
-        )
 
-        const user = new User({
-            email: email,
-            password: hashedPassword,
-            phone: phone,
-            dt_reg: dtReg,
-            dt_upd: dtReg,
-            active_hex: activeHex,
-            status: 0,
-            token: token
-        })
 
-        await user.save()
+     const dtReg = Date()
 
-        if (user) {
+     const activeHex =  jwt.sign(
+         {userId: process.env.API_TOKEN},
+         tokenKey,
+         {expiresIn: '1h'}
+     )
+         //await barest.hash(hashedPassword, 8)
 
-            /* const nodeMailer = require("nodemailer");
+     access_token = jwt.sign(
+         {userId: process.env.JWT_ACCESS_SECRET},
+         tokenKey,
+         {expiresIn: '10m'}
+     )
 
-             let transporter = nodeMailer.createTransport({
-                 host: "smtp.yandex.ru",
-                 port: 25,
-                 secure: false,
-                     auth: {
-                         user: "noreply@cr30.ru",
-                         pass: "sf%wfi8v_MuU"
-                     },
-                 });
+     refresh_token = jwt.sign(
+         {userId: process.env.JWT_ACCESS_SECRET},
+         tokenKey,
+         {expiresIn: '20m'}
+     )
 
-             let info = await transporter.sendMail({
-                 from: `"Личный кабинет АО ЦР" <noreply@30.ru>`,
-                 to: email,
-                 subject: `Регистрация в Личном кабинете АО 'ЦР'`,
-                 text: `<a href="${siteURL}confirm/${token}">Activate</a>`,
-                 html: "<b></b>",
-             });
-             */
-            //console.log("Message sent: %s", info.messageId);
 
-            res.status(200).json({message: 'Пользователь создан'})
-        }
 
-    } catch (e) {
-        res.status(500).json({message: 'Что-то пошло не так, попробуйте снова'})
-        console.log(e)
-    }
-    })
+     const user = new User({
+         email: email,
+         password: hashedPassword,
+         phone: phone,
+         dt_reg: dtReg,
+         dt_upd: dtReg,
+         active_hex: activeHex,
+         status: 0,
+         access_token: access_token,
+         refresh_token: refresh_token
+     })
 
-'use strict';
+     await user.save()
+
+     if (user) {
+
+          const nodeMailer = require("nodemailer");
+
+          let transporter = nodeMailer.createTransport({
+              host: "smtp.yandex.ru",
+              port: 25,
+              secure: false,
+                  auth: {
+                      user: "noreply@cr30.ru",
+                      pass: "sf%wfi8v_MuU"
+                  },
+              });
+
+          let info = await transporter.sendMail({
+              from: `"Личный кабинет АО ЦР" <noreply@30.ru>`,
+              to: email,
+              subject: `Регистрация в Личном кабинете АО 'ЦР'`,
+              text: `<a href="${siteURL}confirm/${token}">Activate</a>`,
+              html: "<b></b>",
+          });
+
+         //console.log("Message sent: %s", info.messageId);
+
+         res.status(200).json({message: 'Пользователь создан'})
+     }
+
+ } catch (e) {
+     res.status(500).json({message: 'Что-то пошло не так, попробуйте снова'})
+     console.log(e)
+ }
+ })*/
+
+/*'use strict';
 
 module.exports = (req, res, next) => {
     if (!req.session.user || !req.session.user.confirmed) {
         return res.redirect('/');
     }
     next();
-};
+};*/
 
+// Account activation
+/*router.get('/confirm/:token',
+    async (req, res, next) => {
+        const {token} = req.params;
 
-router.get('/confirm/:token', async (req, res, next) => {
-    const {token} = req.params;
+        try {
+            const user = await User.findOne({active_hex: token});
 
-    try {
-        const user = await User.findOne({token: token});
+            if (!user) {
+                console.log('User not found')
+                return res.sendStatus(403);
+            }
 
-        if (!user) {
-            console.log('User not found')
-            return res.sendStatus(403);
+            const expiresIn = 1000 * 60 * 60 * 60 * 24;
+
+            if ((Date.now() - user.expires) > expiresIn) {
+                await user.remove();
+                return res.redirect('/');
+            }
+            user.active_hex = ''
+            user.confirmed = true;
+            await user.save();
+            let sess
+            sess = user;
+            if (sess) {
+                console.log('Confirm successful')
+                req.session.user = user;
+                return res.redirect('/');
+            } else {
+                res.send('Подтвердить аккаунт не удалось');
+            }
+        } catch (err) {
+            console.log(err)
+            res.sendStatus(404);
         }
+});*/
 
-        const expiresIn = 1000 * 60 * 60 * 60 * 24;
-
-        if ((Date.now() - user.expires) > expiresIn) {
-            await user.remove();
-            return res.redirect('/');
-        }
-
-        user.confirmed = true;
-        await user.save();
-        var sess = req.session;
-        sess = user;
-        if (sess) {
-            console.log('Confirm successful')
-            session.user = user;
-            return res.redirect('/');
-        } else {
-            res.send('Please login');
-        }
-    } catch (err) {
-        console.log(err)
-        res.sendStatus(404);
-    }
-});
-
-// /api/auth/login
-router.post(
-    '/signin',
+// Authorisation
+/*router.post(
+    '/login',
     [
         check('email', 'Введите корректный email').normalizeEmail().isEmail(),
         check('password', 'Введите пароль').exists()
@@ -167,20 +208,23 @@ router.post(
             const errors = validationResult(req)
 
             if (!errors.isEmpty()) {
-                    console.log(errors.array())
-                    return res.status(400).json({
-                        errors: errors.array(),
-                        massage: 'Некорректные данные при регистрации'
-                    })
-                }
-                const {email, password} = req.body
+                console.log(errors.array())
+                return res.status(400).json({
+                    errors: errors.array(),
+                    massage: 'Некорректные данные при регистрации'
+                })
+            }
+            const {email, password} = req.body
 
-                const user  = await User.findOne({ email: email })
+            const user = await User.findOne({email: email})
 
-                if (!user) {
-                   return res.status(400).json({ message: 'Пользователь не найден'})
-                }
+            if (!user) {
+                return res.status(400).json({message: 'Пользователь не найден'})
+            }
 
+            if (!user.confirmed == true) {
+                return res.status(403).json({message: 'Подтвердите учетную запись'})
+            }
                 const isMatch = await barest.compareSync(password, user.password)
 
             if (!isMatch) {
@@ -188,15 +232,15 @@ router.post(
             }
 
             const token = jwt.sign(
-                {userId: user.id},
+                {userId: process.env.JWT_ACCESS_SECRET},
                 tokenKey,
-                {expiresIn: '1h'}
+                {expiresIn: '10m'}
             )
-            user.token = token;
+            user.access_token = token;
             await user.save()
-            return res.json({AccessToken: token, userId: user.id})
+            return res.json({access_token: token, userId: user.id})
 
-            localStorage.setItem('token', token);
+            localStorage.setItem('access_token', token);
 
             const tokens = await res.json();
 
@@ -205,6 +249,6 @@ router.post(
         } catch (e) {
                 return res.status(500).json({ message: e.toString() })
             }
-})
+})*/
 
 module.exports = router
