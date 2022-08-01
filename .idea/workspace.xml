@@ -24,23 +24,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="Renamed method names to SIGNUP and SIGNIN">
-      <change afterPath="$PROJECT_DIR$/controllers/user-controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dtos/user-dto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exceptions/api.errore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlewares/error.middleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/TokenModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/mail-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/token-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/user-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="Added ApiError Middleware&#10;Registration function is work&#10;Mail service is work">
+      <change afterPath="$PROJECT_DIR$/middlewares/auth-middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/mailer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/token-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/token-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/user-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/user-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +80,7 @@
       <workItem from="1657188271379" duration="7260000" />
       <workItem from="1657254337703" duration="15030000" />
       <workItem from="1657278046946" duration="5642000" />
-      <workItem from="1657876768557" duration="15923000" />
+      <workItem from="1657876768557" duration="25144000" />
     </task>
     <task id="LOCAL-00001" summary="Pull">
       <created>1656663264537</created>
@@ -176,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657194054084</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added ApiError Middleware&#10;Registration function is work&#10;Mail service is work">
+      <created>1659072729276</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659072729276</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +199,8 @@
     <MESSAGE value="Change requst params" />
     <MESSAGE value="Delete mail passwd" />
     <MESSAGE value="Renamed method names to SIGNUP and SIGNIN" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed method names to SIGNUP and SIGNIN" />
+    <MESSAGE value="Added ApiError Middleware&#10;Registration function is work&#10;Mail service is work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ApiError Middleware&#10;Registration function is work&#10;Mail service is work" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -250,13 +248,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="122" width="585" height="795" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1657279428954" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1656574665741">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1659339929372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656574665741" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1656494265284">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1659339929372" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1659335115445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656494265284" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1659335115445" />
   </component>
 </project>

@@ -4,6 +4,7 @@ const barest = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const session = require('client-sessions')
 const {body} = require('express-validator')
+const authMiddleware = require('../middlewares/auth-middleware');
 const User = require('../models/User')
 const router = Router()
 const tokenKey = process.env.JWT_ACCESS_SECRET
@@ -14,12 +15,13 @@ const userController = require('../controllers/user-controller')
 let access_token, refresh_token
 
 
+
 // /api/auth/register
 router.post('/registration', [
-        body('email', 'Не корректный email').isEmail().withMessage('Invalid e-mail.'),
+        body('email', 'Не корректный email').isEmail().withMessage('Не корректный формат email'),
         body('password', 'Минимальная длинна пароля 8 символов')
             .isLength({min: 8, max: 32}),
-        check('password').custom(val => {
+        body('password').custom(val => {
             const uppercase = /[A-Z]+/;
             const lowercase = /[a-z]+/;
             const digit = /[0-9]+/;
@@ -29,7 +31,7 @@ router.post('/registration', [
             }
             return true;
         }),
-        check('phone', 'Введите номер телефона').isMobilePhone('ru-RU').withMessage('Не верный формат номера')
+        body('phone', 'Введите номер телефона').isMobilePhone('ru-RU').withMessage('Не верный формат номера')
     ],
     userController.registration);
 
@@ -37,7 +39,7 @@ router.post('/login', userController.login);
 router.post('/logout', userController.logout);
 router.get('/activate/:link', userController.activate);
 router.post('/refresh', userController.refresh);
-router.post('/users', userController.getUsers);
+router.post('/users', authMiddleware, userController.getUsers);
 
 /* '/registration',
  [

@@ -16,7 +16,7 @@ class UserService {
             throw ApiError.BadRequest(`Пользователь с почтовым адресом ${email} уже существует`)
         }
 
-        const hashedPassword = await barest.hashSync(password, 12) // await barest.hash(password, 12)
+        const hashedPassword = await barest.hashSync(password, 12)
 
         const dtReg = Date()
 
@@ -43,6 +43,7 @@ class UserService {
     async activate(activationLink) {
         const user = await User.findOne({activationLink})
         if (!user) {
+            console.log('Некорректная ссылка активации')
             throw ApiError.BadRequest('Некорректная ссылка активации')
         }
         user.confirmed = true;
@@ -50,6 +51,51 @@ class UserService {
         await user.save();
     }
 
+    async login(email, password) {
+        const user = await User.findOne({email})
+        if (!user) {
+            throw ApiError.BadRequest('Пользователь с таким email не найден')
+        }
+
+        const isPassEquals = await barest.compareSync(password, user.password);
+        if (!isPassEquals) {
+            throw ApiError.BadRequest('Неверный пароль')
+        }
+        const userDto = new UserDto(user);
+        const tokens = tokenService.generateTokens({...userDto});
+
+        await tokenService.saveToken(userDto.id, tokens.refreshToken);
+
+        return {...tokens, user: userDto}
+    }
+
+    async logout(refreshToken) {
+        const token = await tokenService.removeToken(refreshToken);
+        return token;
+    }
+
+    async refresh(refreshToken) {
+        if (!refreshToken) {
+            throw ApiError.UnauthorizedError();
+        }
+        const userData = tokenService.validateRefreshToken(refreshToken)
+        const tokenFromDb = await tokenService.findToken(refreshToken);
+        if (!userData || !tokenFromDb) {
+            throw ApiError.UnauthorizedError();
+        }
+        const user = await User.findById(userData.id);
+        const userDto = new UserDto(user);
+        const tokens = tokenService.generateTokens({...userDto});
+
+        await tokenService.saveToken(userDto.id, tokens.refreshToken);
+
+        return {...tokens, user: userDto}
+    }
+
+    async getAllUsers() {
+        const users = await User.find();
+        return users;
+    }
 }
 
 module.exports = new UserService();
