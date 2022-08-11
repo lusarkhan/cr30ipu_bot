@@ -24,7 +24,25 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="add change yml" />
+    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="add change yml">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user-controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbconfig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtos/user-dto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exceptions/api.errore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/auth-middleware.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/error.middleware.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/TokenModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/mail-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/token-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/user-service.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +112,7 @@
       <workItem from="1660046049693" duration="3106000" />
       <workItem from="1660121214443" duration="11042000" />
       <workItem from="1660133131724" duration="2997000" />
-      <workItem from="1660192240039" duration="12407000" />
+      <workItem from="1660192240039" duration="13344000" />
     </task>
     <task id="LOCAL-00001" summary="Pull">
       <created>1656663264537</created>
@@ -243,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660204677379</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add change yml">
+      <created>1660204715046</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1660204715046</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,14 +375,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="949" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1657710548292" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1656662711514">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1660211483026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1656662711514" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1660204521959">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1660211483026" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1660204723280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660204521959" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660204723280" />
     <state x="667" y="122" width="585" height="795" key="find.popup" timestamp="1657279428954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
