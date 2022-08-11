@@ -24,8 +24,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="all complite 11.08.2022">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/github-actions-ipu.yml" afterDir="false" />
+    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="add yml">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/github-actions-ipu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/github-actions-ipu.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +97,7 @@
       <workItem from="1660046049693" duration="3106000" />
       <workItem from="1660121214443" duration="11042000" />
       <workItem from="1660133131724" duration="2997000" />
-      <workItem from="1660192240039" duration="11503000" />
+      <workItem from="1660192240039" duration="12039000" />
     </task>
     <task id="LOCAL-00001" summary="Pull">
       <created>1656663264537</created>
@@ -218,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660203520275</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add yml">
+      <created>1660203857203</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1660203857203</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +285,8 @@
     <MESSAGE value="Backend coding finish" />
     <MESSAGE value="correct token expiresIn time" />
     <MESSAGE value="all complite 11.08.2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="all complite 11.08.2022" />
+    <MESSAGE value="add yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add yml" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -326,10 +334,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1656662711514" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1660203542871">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1660203873048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660203542871" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660203873048" />
     <state x="667" y="122" width="585" height="795" key="find.popup" timestamp="1657279428954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
