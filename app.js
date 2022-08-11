@@ -35,10 +35,10 @@ if (libPath && fs.existsSync(libPath)) {
 
 oracledb.extendedMetaData = true;
 
-app.use(cors());
 app.use(cors({
     credentials: true,
-    origin: process.env.CLIENT_URL
+    origin: process.env.CLIENT_URL,
+    methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH']
 }));
 
 app.use(express.json())
@@ -48,8 +48,9 @@ app.use(
         extended: true
     })
 )
+
 app.use('/api', router)
-app.use('/api/auth', require('./routes/auth.routes'))
+app.use('/api/auth', require('./routes/auth.routes'));
 app.use(errorMiddleware);
 
 

@@ -15,7 +15,6 @@ const userController = require('../controllers/user-controller')
 let access_token, refresh_token
 
 
-
 // /api/auth/register
 router.post('/registration', [
         body('email', 'Не корректный email').isEmail().withMessage('Не корректный формат email'),
@@ -38,8 +37,8 @@ router.post('/registration', [
 router.post('/login', userController.login);
 router.post('/logout', userController.logout);
 router.get('/activate/:link', userController.activate);
-router.post('/refresh', userController.refresh);
-router.post('/users', authMiddleware, userController.getUsers);
+router.get('/refresh', userController.refresh);
+router.get('/users', authMiddleware, userController.getUsers);
 
 /* '/registration',
  [

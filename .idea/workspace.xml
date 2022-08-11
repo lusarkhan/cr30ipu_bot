@@ -24,8 +24,43 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="Backend coding finish">
+    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/_models/IUser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/_models/response/AuthResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/components/LoginForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/helpers/division/division.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/helpers/minus/minus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/helpers/minus/minus.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/helpers/sum/sum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/helpers/sum/sum.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/http/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/services/AuthService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/services/UserService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/store/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/scripts/e2e.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/scripts/eslint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/scripts/i18n-check.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/scripts/storybook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/scripts/typecheck.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/token-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/token-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/user-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/user-service.js" afterDir="false" />
     </list>
@@ -33,6 +68,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +103,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="ts.external.directory.path" value="C:\Users\admin\AppData\Local\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\admin\WebstormProjects\cr30ipu_bot\client\cr30ipu-bot-app\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -84,7 +126,14 @@
       <workItem from="1657188271379" duration="7260000" />
       <workItem from="1657254337703" duration="15030000" />
       <workItem from="1657278046946" duration="5642000" />
-      <workItem from="1657876768557" duration="26112000" />
+      <workItem from="1657876768557" duration="26423000" />
+      <workItem from="1659344724007" duration="2855000" />
+      <workItem from="1659348746036" duration="201000" />
+      <workItem from="1659350191070" duration="14000" />
+      <workItem from="1660046049693" duration="3106000" />
+      <workItem from="1660121214443" duration="11042000" />
+      <workItem from="1660133131724" duration="2997000" />
+      <workItem from="1660192240039" duration="10980000" />
     </task>
     <task id="LOCAL-00001" summary="Pull">
       <created>1656663264537</created>
@@ -191,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659343949602</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="correct token expiresIn time">
+      <created>1659344274769</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1659344274769</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,11 +256,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -219,7 +305,8 @@
     <MESSAGE value="Renamed method names to SIGNUP and SIGNIN" />
     <MESSAGE value="Added ApiError Middleware&#10;Registration function is work&#10;Mail service is work" />
     <MESSAGE value="Backend coding finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backend coding finish" />
+    <MESSAGE value="correct token expiresIn time" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -227,6 +314,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1656400680524" />
+    <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1660203201057">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1660203201057" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1660123288158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1660123288158" />
     <state x="707" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1657278415182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -235,10 +330,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="555" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1659343846186" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1656667094457">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1659348948813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1656667094457" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1659348948813" />
     <state width="949" height="282" key="GridCell.Tab.0.bottom" timestamp="1657710548292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -259,14 +354,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1656662711514" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1656912975383">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1659344475149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1656912975383" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1659344475149" />
     <state x="667" y="122" width="585" height="795" key="find.popup" timestamp="1657279428954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="122" width="585" height="795" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1657279428954" />
+    <state x="759" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1659344419697">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="759" y="421" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1659344419697" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1659339929372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

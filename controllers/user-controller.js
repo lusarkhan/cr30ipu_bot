@@ -22,8 +22,8 @@ class UserController {
 
     async activate(req, res, next) {
         try {
-            const {activationLink} = req.params.link;
-            await userService.activate({activationLink});
+            const activationLink = req.params.link;
+            await userService.activate(activationLink);
             return res.redirect(process.env.CLIENT_URL)
         } catch (e) {
             next(e);
@@ -32,11 +32,21 @@ class UserController {
     }
 
     async login(req, res, next) {
+        console.log('Login api');
         try {
+
             const {email, password} = req.body;
             const userData = await userService.login(email, password);
             res.cookie('refreshToken', userData.refreshToken, {maxAge: 1 * 24 * 60 * 60 * 1000, httpOnly: true});
+            //res.setHeader('Access-Control-Allow-Origin', '*');
+            res.setHeader('Access-Control-Allow-Methods', 'POST');
+            res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+            res.setHeader('Access-Control-Allow-Credentials', true);
             return res.json(userData);
+
+
+            // Pass to next layer of middleware
+            next();
         } catch (e) {
             next(e);
         }

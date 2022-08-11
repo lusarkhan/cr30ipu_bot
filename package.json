@@ -19,6 +19,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.7.0",
     "mongoose": "^6.4.0",
+    "node": "^18.7.0",
     "nodemon": "^2.0.18",
     "oracledb": "^5.4.0",
     "telegraf": "^4.8.5",

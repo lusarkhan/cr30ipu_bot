@@ -41,10 +41,11 @@ class UserService {
     }
 
     async activate(activationLink) {
-        const user = await User.findOne({activationLink})
+        const user = await User.findOne({active_hex: activationLink})
         if (!user) {
-            throw ApiError.BadRequest('Некорректная ссылка активации')
+            throw ApiError.BadRequest('Некорректная ссылка для активации')
         }
+        user.active_hex = '';
         user.confirmed = true;
         user.status = 1;
         await user.save();
@@ -54,6 +55,10 @@ class UserService {
         const user = await User.findOne({email})
         if (!user) {
             throw ApiError.BadRequest('Пользователь с таким email не найден')
+        }
+
+        if (user.confirmed != true) {
+            throw ApiError.BadRequest('Ссылка для активации аккаунта отправлена на электронную почту!')
         }
 
         const isPassEquals = await barest.compareSync(password, user.password);
