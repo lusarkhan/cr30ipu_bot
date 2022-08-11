@@ -24,45 +24,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/_models/IUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/_models/response/AuthResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/components/LoginForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/helpers/division/division.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/helpers/minus/minus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/helpers/minus/minus.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/helpers/sum/sum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/helpers/sum/sum.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/http/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/services/AuthService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/services/UserService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/store/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/scripts/e2e.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/scripts/eslint.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/scripts/i18n-check.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/scripts/storybook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/scripts/typecheck.js" afterDir="false" />
+    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="all complite 11.08.2022">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/github-actions-ipu.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/user-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/token-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/token-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/user-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/user-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +97,7 @@
       <workItem from="1660046049693" duration="3106000" />
       <workItem from="1660121214443" duration="11042000" />
       <workItem from="1660133131724" duration="2997000" />
-      <workItem from="1660192240039" duration="10980000" />
+      <workItem from="1660192240039" duration="11503000" />
     </task>
     <task id="LOCAL-00001" summary="Pull">
       <created>1656663264537</created>
@@ -247,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659344274769</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="all complite 11.08.2022">
+      <created>1660203520275</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1660203520275</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +277,8 @@
     <MESSAGE value="Added ApiError Middleware&#10;Registration function is work&#10;Mail service is work" />
     <MESSAGE value="Backend coding finish" />
     <MESSAGE value="correct token expiresIn time" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="all complite 11.08.2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="all complite 11.08.2022" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -354,10 +326,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1656662711514" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1659344475149">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1660203542871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1659344475149" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660203542871" />
     <state x="667" y="122" width="585" height="795" key="find.popup" timestamp="1657279428954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
