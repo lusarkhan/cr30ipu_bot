@@ -8,11 +8,14 @@ import UserService from "./services/UserService";
 
 
 const App: FC = () => {
-
+    const [data, setData] = useState(null);
     const {store} = useContext(Context);
     const [users, setUsers] = useState<IUser[]>([]);
 
     useEffect(() => {
+        fetch('/api')
+            .then((response) => response.json())
+            .then(response => setData(response.message))
         if (localStorage.getItem('token')) {
             store.checkAuth()
         }
@@ -50,6 +53,9 @@ const App: FC = () => {
     }
     return (
         <div>
+            {
+                !data ? "Loading..." : data
+            }
             <h1>{store.isAuth ? `Пользователь авторизован ${store.user.email}` : 'АВТОРИЗУЙТЕСЬ'}</h1>
             <h1>{store.user.confirmed ? `Аккаунт подтвержден по почте` : 'ПОДТВЕРДИТЕ АККАУНТ'}</h1>
             <button onClick={() => store.logout()}>Выйти</button>

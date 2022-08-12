@@ -15,14 +15,14 @@ const LoginForm: FC = () => {
             <div className="card card-container">
                 <div className="form-group">
                     <label htmlFor="username">Username</label>
-                    ` <input
-                    className="form-control"
-                    name="username"
-                    onChange={e => setEmail(e.target.value)}
-                    value={email}
-                    type="text"
-                    placeholder="Email"
-                />
+                    <input
+                        className="form-control"
+                        name="username"
+                        onChange={e => setEmail(e.target.value)}
+                        value={email}
+                        type="text"
+                        placeholder="Email"
+                    />
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password</label>
