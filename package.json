@@ -1,34 +1,53 @@
 {
-  "name": "cr30ipu_bot",
-  "version": "1.0.0",
-  "description": "Get IPU value from abonent",
-  "main": "/server/app.js",
-  "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
-  },
-  "author": "Lusarkhan",
-  "license": "ISC",
+  "name": "cr30ipu-bot-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.47",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
     "axios": "^0.27.2",
-    "bcryptjs": "^2.4.3",
-    "client-sessions": "^0.8.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongodb": "^4.7.0",
-    "mongoose": "^6.4.0",
-    "node": "^18.7.0",
-    "nodemon": "^2.0.19",
-    "oracledb": "^5.4.0",
-    "telegraf": "^4.8.5",
-    "uuid": "^8.3.2"
+    "bootstrap": "^4.6.0",
+    "mobx": "^6.6.1",
+    "mobx-react-lite": "^3.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.7.4",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "cookie-parser": "^1.4.6",
-    "express-validator": "^6.14.2",
-    "nodemailer": "^6.7.7",
-    "request": "^2.88.2"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:storybook": "node scripts/storybook.js",
+    "test:unit": "react-scripts test",
+    "test:e2e": "node scripts/e2e.test.js",
+    "lint": "node scripts/eslint.js",
+    "type:check": "node scripts/typecheck.js",
+    "i18n:check": "node scripts/i18n-check.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

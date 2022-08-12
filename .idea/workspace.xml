@@ -24,10 +24,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="Add bootstrap 4.6.0">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="add gitignore to root path 12.08.2022" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -319,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660281665411</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add gitignore to root path 12.08.2022">
+      <created>1660281948510</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1660281948510</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +419,8 @@
     <MESSAGE value="All complete to deploy" />
     <MESSAGE value="Change node version in workspace from v.18 to v.16" />
     <MESSAGE value="Add bootstrap 4.6.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add bootstrap 4.6.0" />
+    <MESSAGE value="add gitignore to root path 12.08.2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitignore to root path 12.08.2022" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -467,10 +472,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1660277721624" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1660281669706">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1660281955137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660281669706" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660281955137" />
     <state x="746" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1660211836368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
