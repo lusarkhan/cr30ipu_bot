@@ -1,4 +1,5 @@
-import React, {FC, useContext, useEffect, useState} from 'react';
+import React, {FC, Component, useContext, useEffect, useState} from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import LoginForm from "./components/LoginForm";
 import {Context} from "./index";
 import {observer} from "mobx-react-lite";
@@ -26,6 +27,15 @@ const App: FC = () => {
         }
     }
 
+    async function getAdminBoard() {
+        try {
+            const response = await UserService.getAdminBoard();
+            setUsers(response.data);
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
     if (store.isLoading) {
         return <div>Загрузка...</div>
     }
@@ -44,8 +54,14 @@ const App: FC = () => {
             <h1>{store.user.confirmed ? `Аккаунт подтвержден по почте` : 'ПОДТВЕРДИТЕ АККАУНТ'}</h1>
             <button onClick={() => store.logout()}>Выйти</button>
             <div>
-                <button onClick={getUsers}>Получить пользователей</button>
+                <button onClick={() => store.user.confirmed ? getUsers() : 'ПОДТВЕРДИТЕ АККАУНТ'}>Получить
+                    пользователей
+                </button>
             </div>
+            <div>
+                <button onClick={getAdminBoard}>Админ панель</button>
+            </div>
+
             {users.map(user =>
                 <div key={user.email}>{user.email}</div>
             )}

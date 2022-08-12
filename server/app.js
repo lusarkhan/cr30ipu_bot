@@ -47,7 +47,8 @@ app.use(
         extended: true
     })
 )
-app.use('/api', router)
+
+app.use('/api', router);
 app.use('/api/auth', require('./routes/auth.routes'))
 app.use(errorMiddleware);
 

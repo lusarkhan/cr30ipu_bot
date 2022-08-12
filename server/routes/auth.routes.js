@@ -1,18 +1,18 @@
 require('dotenv').config()
 const {Router} = require('express');
-const barest = require('bcryptjs')
-const jwt = require('jsonwebtoken')
-const session = require('client-sessions')
+//const barest = require('bcryptjs')
+//const jwt = require('jsonwebtoken')
+//const session = require('client-sessions')
 const {body} = require('express-validator')
 const authMiddleware = require('../middlewares/auth-middleware');
-const User = require('../models/User')
+//const User = require('../models/User')
 const router = Router()
-const tokenKey = process.env.JWT_ACCESS_SECRET
-const mailSettings = process.env.MAILSETTINGS
-const siteURL = process.env.API_URL
-const tokenService = require('../service/token-service')
+//const tokenKey = process.env.JWT_ACCESS_SECRET
+//const mailSettings = process.env.MAILSETTINGS
+//const siteURL = process.env.API_URL
+//const tokenService = require('../service/token-service')
 const userController = require('../controllers/user-controller')
-let access_token, refresh_token
+//let access_token, refresh_token
 
 
 // /api/auth/register

@@ -24,8 +24,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="All complete to deploy">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/github-actions-ipu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/github-actions-ipu.yml" afterDir="false" />
+    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="Change node version in workspace from v.18 to v.16">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cr30ipu-bot-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cr30ipu-bot-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/components/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/components/LoginForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/services/UserService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/src/services/UserService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660278620004</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Change node version in workspace from v.18 to v.16">
+      <created>1660278775595</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1660278775595</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +412,8 @@
     <MESSAGE value="last commit 11.08.2022" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="All complete to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="All complete to deploy" />
+    <MESSAGE value="Change node version in workspace from v.18 to v.16" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change node version in workspace from v.18 to v.16" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -450,10 +465,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1660277721624" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1660278640953">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1660278782931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660278640953" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660278782931" />
     <state x="746" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1660211836368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
