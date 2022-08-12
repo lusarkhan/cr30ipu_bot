@@ -24,24 +24,30 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="add change yml">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="0e3c9549-86e9-4fe8-a35d-691b9ddd41db" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'">
+      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/user-controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/dbconfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/dtos/user-dto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/exceptions/api.errore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middlewares/auth-middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middlewares/error.middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/TokenModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/auth.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/service/mail-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/service/token-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/service/user-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/user-controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbconfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtos/user-dto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exceptions/api.errore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/auth-middleware.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/error.middleware.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/TokenModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/mail-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/token-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/user-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/cr30ipu-bot-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scripts/e2e.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/scripts/e2e.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scripts/eslint.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/scripts/eslint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scripts/i18n-check.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/scripts/i18n-check.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scripts/storybook.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/scripts/storybook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scripts/typecheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/cr30ipu-bot-app/scripts/typecheck.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +62,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Rasul T &lt;108508716+lusarkhan@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -79,10 +96,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
+    <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../../../Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="C:\Users\admin\WebstormProjects\cr30ipu_bot\client\cr30ipu-bot-app\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\WebstormProjects\cr30ipu_bot\client\cr30ipu-bot-app" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -268,7 +291,35 @@
       <option name="project" value="LOCAL" />
       <updated>1660204715046</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add change yml">
+      <created>1660211777409</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1660211777409</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add change yml">
+      <created>1660211859293</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1660211859293</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add change yml">
+      <created>1660211973818</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1660211973818</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1660222478279</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1660222478279</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +353,31 @@
             </State>
           </value>
         </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/admin/WebstormProjects/cr30ipu_bot/server" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -312,6 +388,7 @@
     <option name="OPEN_GENERIC_TABS">
       <map>
         <entry key="1" value="TOOL_WINDOW" />
+        <entry key="2" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -331,7 +408,11 @@
     <MESSAGE value="add yml" />
     <MESSAGE value="change yml" />
     <MESSAGE value="add change yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add change yml" />
+    <MESSAGE value="add server path" />
+    <MESSAGE value="last commit" />
+    <MESSAGE value="last commit 11.08.2022" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -339,10 +420,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1656400680524" />
-    <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1660203201057">
+    <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1660222690152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1660203201057" />
+    <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1660222690152" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1660123288158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -359,34 +440,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1659348948813" />
-    <state width="949" height="282" key="GridCell.Tab.0.bottom" timestamp="1657710548292">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1660277787752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1657710548292" />
-    <state width="949" height="282" key="GridCell.Tab.0.center" timestamp="1657710548292">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1660277787752" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1660277787751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1657710548292" />
-    <state width="949" height="282" key="GridCell.Tab.0.left" timestamp="1657710548291">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1660277787751" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1660277787751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1657710548291" />
-    <state width="949" height="282" key="GridCell.Tab.0.right" timestamp="1657710548292">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1660277787751" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1660277787751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1657710548292" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1660211483026">
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1660277787751" />
+    <state x="743" y="240" key="RollbackChangesDialog" timestamp="1660277323720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1660211483026" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1660204723280">
+    <state x="743" y="240" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1660277323720" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1660277721624">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660204723280" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1660277721624" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1660222490210">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660222490210" />
+    <state x="746" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1660211836368">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="746" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1660211836368" />
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1660277263589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1660277263589" />
     <state x="667" y="122" width="585" height="795" key="find.popup" timestamp="1657279428954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="122" width="585" height="795" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1657279428954" />
+    <state x="677" y="308" key="git4idea.merge.GitPullDialog" timestamp="1660277285122">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="677" y="308" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1660277285122" />
     <state x="759" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1659344419697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
